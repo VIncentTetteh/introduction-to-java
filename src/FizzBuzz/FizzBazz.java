@@ -1,0 +1,20 @@
+package FizzBuzz;
+
+import java.util.Scanner;
+
+public class FizzBazz {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number");
+        int number = scanner.nextInt();
+        //String sound = number % 5 == 0? "Fizz" : number % 3 == 0 ? "Bazz": number;
+        if(number % 5 == 0 && number % 3 == 0 )
+            System.out.println("FizzBuzz");
+        else if(number % 5 == 0)
+            System.out.println("Fizz");
+        else if(number % 3 == 0)
+            System.out.println("Buzz");
+
+        else System.out.println(number);
+    }
+}
